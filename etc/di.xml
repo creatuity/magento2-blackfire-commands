@@ -9,8 +9,8 @@
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="greeting_command" xsi:type="object">Magento\CommandExample\Console\Command\GreetingCommand</item>
-                <item name="check_active_status_command" xsi:type="object">Magento\CommandExample\Console\Command\CheckActiveModulesCommand</item>
+                <item name="greeting_command" xsi:type="object">Creatuity\BlackfireCommands\Console\Command\GreetingCommand</item>
+                <item name="check_active_status_command" xsi:type="object">Creatuity\BlackfireCommands\Console\Command\CheckActiveModulesCommand</item>
             </argument>
         </arguments>
     </type>
