@@ -1,4 +1,4 @@
-<?php /**
+<?php
 
 namespace Creatuity\BlackfireCommands\Console\Command;
 
