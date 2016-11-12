@@ -11,7 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * Class ProfileCategoryCommand
  */
-class ProfileCategoryCommand extends Command
+class WriteYamlCommand extends Command
 {
     public function __construct(
         \Magento\Framework\App\State $state, $name=null
@@ -29,8 +29,8 @@ class ProfileCategoryCommand extends Command
      */
     protected function configure()
     {
-        $this->setName('blackfire:category')
-            ->setDescription('Profiles all category pages');
+        $this->setName('blackfire:writeyaml')
+            ->setDescription('Writes a new Blackfire yaml file');
         parent::configure();
     }
 
@@ -45,10 +45,12 @@ class ProfileCategoryCommand extends Command
             ->addAttributeToSelect('*')
             ->addAttributeToFilter('is_active',1)
             ->setOrder('position', 'ASC');
+        $output->writeln('<info>scenarios:</info>');
         foreach ($categories as $category) :
-            $output->writeln('<info>Profiling ' . $category->getName() . ' ' . $category->getURL() . '</info>');
-            exec('blackfire curl ' . $category->getURL());
+            $output->writeln("<info>\t$category->getName() Category Page:</info>");
+            $output->writeln("<info>\t\t- $category->getURL()</info>");
+            $output->writeln("<info></info>");
         endforeach;
-        $output->writeln('<info>Done</info>');
+        $output->writeln('<info></info>');
     }
 }

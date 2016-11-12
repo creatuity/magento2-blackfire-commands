@@ -3,6 +3,7 @@
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
+                <item name="write_yaml_command" xsi:type="object">Creatuity\BlackfireCommands\Console\Command\WriteYamlCommand</item>
                 <item name="profile_category_command" xsi:type="object">Creatuity\BlackfireCommands\Console\Command\ProfileCategoryCommand</item>
                 <item name="greeting_command" xsi:type="object">Creatuity\BlackfireCommands\Console\Command\GreetingCommand</item>
                 <item name="check_active_status_command" xsi:type="object">Creatuity\BlackfireCommands\Console\Command\CheckActiveModulesCommand</item>
