@@ -47,8 +47,8 @@ class WriteYamlCommand extends Command
             ->setOrder('position', 'ASC');
         $output->writeln('<info>scenarios:</info>');
         foreach ($categories as $category) :
-            $output->writeln("<info>\t$category->getName() Category Page:</info>");
-            $output->writeln("<info>\t\t- $category->getURL()</info>");
+            $output->writeln("<info>\t" . $category->getName() . "Category Page:</info>");
+            $output->writeln("<info>\t\t- " . $category->getURL() . "</info>");
             $output->writeln("<info></info>");
         endforeach;
         $output->writeln('<info></info>');
