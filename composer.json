@@ -5,7 +5,17 @@
   "require": {
     "php": "~5.5.0|~5.6.0|~7.0.0"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "authors": [
+	{
+		"name": "Joshua Warren (joshuaswarren)",
+		"role": "Maintainer"
+	},
+	{
+		"name": "Creatuity Developers (creatuitydevelopers)",
+		"role": "Maintainer"
+	}
+	]
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
