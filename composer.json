@@ -15,7 +15,7 @@
 		"name": "Creatuity Developers (creatuitydevelopers)",
 		"role": "Maintainer"
 	}
-	]
+	],
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
